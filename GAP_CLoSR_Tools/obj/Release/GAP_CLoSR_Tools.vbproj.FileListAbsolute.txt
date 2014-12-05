@@ -1,0 +1,10 @@
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\bin\Release\GAP_CLoSR_Tools.exe.config
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\bin\Release\GAP_CLoSR_Tools.exe
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\bin\Release\GAP_CLoSR_Tools.pdb
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\bin\Release\GAP_CLoSR_Tools.xml
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.frm_Main.resources
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.Resources.resources
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.vbproj.GenerateResource.Cache
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.exe
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.xml
+G:\VisStudioProjectBackup\GAP_CLoSR_Tools\GAP_CLoSR_Tools\obj\Release\GAP_CLoSR_Tools.pdb

@@ -1,0 +1,41 @@
+
+possibly redundant variables
+
+'coding parameters - some of these may be redundant
+    
+    
+    
+    
+    At startup
+    GC_DefaultsLoaded As Boolean = False       'set initially to false (Have parameter defaults been loaded?)
+    GC_AllVariablesComplete As Boolean = False 'set initially to false (Are all variables entered?)
+    GC_DefaultsSaved As Boolean = False        'set initially to false (Have parameter defaults been saved?)
+    GC_HasScripRun As Boolean = False          'set initially to false (Has the script run?)
+    GC_PyAppSelected As Boolean = False 'has the python exe application been selected?
+    GC_PyAppSaved As Boolean = False    'has the python exe application name been saved?
+    GC_startup As Boolean = True
+   
+    
+    After loading a scenario file
+    GC_DefaultsLoaded = True
+    
+    
+    
+    
+    After clearing parameters
+    GC_DefaultsLoaded = False 'set initially to false (Have defaults been loaded?)
+    btn_ClearAll.Enabled = False 'reset the button to not enabled      
+    GC_AllVariablesComplete = False
+    
+    
+    After saving parameters
+    GC_DefaultsSaved = True
+    
+    
+    
+    After saving python config settings
+    GC_PyAppSaved = True
+    
+    
+    After loading python config settings
+    GC_PyAppSelected = True

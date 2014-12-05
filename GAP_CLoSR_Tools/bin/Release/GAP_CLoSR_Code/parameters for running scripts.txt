@@ -1,0 +1,96 @@
+
+
+'Script Arguments 
+'Python Script Convert_luseToRaster.py (GC_Scr_DefL) (5 arguments)
+'        basefolder			GC_RootDir
+'        lh_cc				GC_input_CC
+'        luse.shp with path		GC_input_luse_shp
+'        luse				GC_input_luse
+'        rastervalue field "GRIDCODE"	GC_conv_luse_RVfield
+'
+'Python Script CreateGapCrossingLayer.py (GC_Scr_DefGC) (4 arguments)
+'        basefolder			GC_RootDir
+'        lh_cc				GC_input_CC
+'	 gapcross			GC_input_gap_cross
+'	 maxdistance1 (numeric)		GC_Max_dist1           (passed as string)
+'
+'Python Script CreateGapCrossingLayerOLD.py (GC_Scr_DefO) (4 arguments)
+'        basefolder			GC_RootDir
+'        lh_cc				GC_input_CC
+'	 gapcrossO			GC_input_gap_crossO
+'        InputCellMultiplier (numeric)  GC_CellMultiplier
+'
+'Python Script 1_CreateRasterChangeLayer.py (GC_Scr_Scen1) (5 arguments)
+'        basefolder			GC_RootDir
+'	 changelayer.shp with path      GC_input_changelyr_shp
+'        lh_cc				GC_input_CC
+'        rastervaluefield "Clear"       GC_FieldName
+'        changelayer                    GC_input_changelyr
+'
+'Python Script 2a_ModifyVegetationLayer_Removal.py (GC_Scr_Scen2a) (4 arguments)
+'        basefolder			GC_RootDir
+'        changelayer                    GC_input_changelyr
+'        lh_cc				GC_input_CC
+'        lh_ccrem			GC_veg_removal
+'
+'Python Script 2b_ModifyVegetationLayer_Addition.py (GC_Scr_Scen2b) (6 arguments)
+'        basefolder			GC_RootDir
+'        changelayer                    GC_input_changelyr
+'        lh_cc				GC_input_CC
+'        luse				GC_input_luse
+'        HydrologyValue1 (numeric, 10)  GC_HydrologyValue1 (passed as string)
+'	 lh_ccadd			GC_veg_addition
+'
+'Python Script 3_CreateGapCrossingLayer.py (GC_Scr_Scen3) (4 arguments)
+'        basefolder			GC_RootDir
+'        lh_ccrem			GC_veg_removal
+'        gap_crossadd                   GC_gapcross_add
+'        InputCellMultiplier2 (numeric) GC_CellMultiplier2 (passed as string)
+
+'Python Script 4_ModifyLuseLayer_AddInfra.py (GC_Scr_Scen4) (5 arguments)
+'        basefolder			GC_RootDir
+'        changelayer                    GC_input_changelyr
+'        luse_add                       GC_luse_add
+'        HydrologyValue2 (numeric, 30)  GC_HydrologyValue2 (passed as string)
+'        luse				GC_input_luse
+' 
+'Python Script GAP_CLoSR_ArgV4.py (GC_theScript) (9 arguments)
+'	RootDir				GC_RootDir
+'	input_CC			GC_input_CC
+'	input_gap_cross			GC_input_gap_cross
+'	input_luse			GC_input_luse
+'	original_pixel_size		GC_original_pixel_size
+'	new_pixel_size			GC_new_pixel_size
+'	Max_cost			GC_Max_cost
+'	Max_distance			GC_Max_distance
+'	reclass_txt			GC_reclass_txt
+
+
+   'Filenames and locations
+GC_RootDir As String   'base folder for raster processing
+GC_OutputDir As String 'output folder for for GAP_CLoSR.py
+GC_input_CC As String            'lh_cc            raster variable name
+GC_input_gap_cross As String     'gap_cross        raster variable name
+GC_input_luse As String          'luse             raster variable name
+GC_input_luse_shp As String      'luse.shp         shapefile variable name
+GC_input_changelyr As String     'changelayer      raster variable name
+GC_input_changelyr_shp As String 'changelayer.shp  shapefile variable name
+GC_veg_removal As String         'lh_ccrem          raster variable name
+GC_veg_addition As String        'lh_ccadd          raster variable name
+GC_gapcross_add As String        'gap_crossadd     raster variable name
+GC_luse_add As String            'luse_add         raster variable name
+
+    'Processing parameters
+GC_conv_luse_RVfield As String   'variable for Python Script Convert_luseToRaster.py
+GC_Max_dist1 As Double           'variable for Python Script CreateGapCrossingLayer.py     ##check data type
+GC_CellMultiplier As Double      'variable for Python Script CreateGapCrossingLayerOLD.py  ##change data type to string
+GC_FieldName As String           'variable for Python Script Script 1_CreateRasterChangeLayer.py   ##check data type
+GC_HydrologyValue1 As String     'variable for Python Script 2b_ModifyVegetationLayer_Addition.py   ##check data type
+GC_CellMultiplier2 As String     'variable for Python Script 3_CreateGapCrossingLayer.py   ##check data type
+GC_HydrologyValue2 As String     'variable for Python Script    ##check data type
+GC_original_pixel_size As Single 'variable for Python Script GAP_CLoSR_ArgV.py 
+GC_new_pixel_size As Single      'variable for Python Script GAP_CLoSR_ArgV.py
+GC_Max_cost As Single            'variable for Python Script GAP_CLoSR_ArgV.py
+GC_Max_distance As Double        'variable for Python Script GAP_CLoSR_ArgV.py
+GC_reclass_txt As String         'variable for Python Script GAP_CLoSR_ArgV.py
+
